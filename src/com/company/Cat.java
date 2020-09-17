@@ -1,6 +1,6 @@
 package com.company;
 
-public class Cat extends Animal  {
+public class Cat extends Animal {
     private int age;
 
     public Cat(int age) {

@@ -3,13 +3,16 @@ package com.company;
 public class Cow extends Animal{
     private String color;
 
-    public Cow(String color) {
+
+    public Cow( String color) {
+        super();
         this.color = color;
     }
 
     public String getColor() {
         return color;
     }
+
 
     @Override
     public void print() {
