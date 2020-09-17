@@ -3,17 +3,21 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        createObject("1").print();
-        createObject("2").print();
-        createObject("3").print();
+     Printable cat =  createObject("cat");
+     Printable cow =   createObject("cow");
+     Printable dog =  createObject("dog");
 
+     Printable[] printables = {cat,cow,dog};
+        for (int i = 0; i < printables.length; i++) {
+            printables[i].print();
+        }
     }
     public static Printable createObject (String className) {
 
         return switch (className) {
-            case "1" -> new Cat(5);
-            case "2" -> new Cow("black");
-            case "3" -> new Dog("akbar");
+            case "cat" -> new Cat(5);
+            case "cow" -> new Cow("black");
+            case "dog" -> new Dog("akbar");
             default -> null;
         };
     }
