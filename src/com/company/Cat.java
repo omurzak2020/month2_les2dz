@@ -3,7 +3,8 @@ package com.company;
 public class Cat extends Animal {
     private int age;
 
-    public Cat(int age) {
+    public Cat(int age,String breed) {
+        super(breed);
         this.age = age;
     }
 
@@ -14,6 +15,7 @@ public class Cat extends Animal {
     @Override
     public void print() {
         System.out.println("_____________________________");
+        super.print();
         System.out.println("Возраст "+ getAge());
     }
 }

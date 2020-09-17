@@ -15,9 +15,9 @@ public class Main {
     public static Printable createObject (String className) {
 
         return switch (className) {
-            case "cat" -> new Cat(5);
-            case "cow" -> new Cow("black");
-            case "dog" -> new Dog("akbar");
+            case "cat" -> new Cat(5,"russ");
+            case "cow" -> new Cow("black","aziyt");
+            case "dog" -> new Dog("akbar","alabay");
             default -> null;
         };
     }

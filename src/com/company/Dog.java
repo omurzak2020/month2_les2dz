@@ -3,7 +3,8 @@ package com.company;
 public class Dog extends Animal {
     private String name;
 
-    public Dog(String name) {
+    public Dog(String name,String breed) {
+        super(breed);
         this.name = name;
     }
 
@@ -14,6 +15,7 @@ public class Dog extends Animal {
     @Override
     public void print() {
         System.out.println("_____________________________");
+        super.print();
         System.out.println("Имя "+ getName());
     }
 }

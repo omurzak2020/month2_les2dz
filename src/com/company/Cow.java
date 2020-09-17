@@ -4,8 +4,8 @@ public class Cow extends Animal{
     private String color;
 
 
-    public Cow( String color) {
-        super();
+    public Cow( String color,String breed) {
+        super(breed);
         this.color = color;
     }
 
@@ -18,6 +18,7 @@ public class Cow extends Animal{
     public void print() {
 
         System.out.println("_____________________________");
+        super.print();
         System.out.println("Свет "+ getColor());
     }
 }
